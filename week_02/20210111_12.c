@@ -9,7 +9,7 @@ int splitedByThree(int value){
 
 int main(){
   int value = 4;
-  printf("%d", splitedByThree(value));
+  printf("%d \n", splitedByThree(value));
 
   return 0;
 }

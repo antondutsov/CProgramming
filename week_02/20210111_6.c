@@ -9,7 +9,7 @@ int main(void){
     int maskShift = mask << index;
     int newValue = number ^ maskShift;
 
-    printf("%d", newValue);
+    printf("%d \n", newValue);
 
     return 0;
 }

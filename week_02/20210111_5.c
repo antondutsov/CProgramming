@@ -6,7 +6,7 @@ int main(void){
     int value = 45;
     int index = 3;
     int newValue = obarniBitNa(value,index);
-    printf("%d",newValue);
+    printf("%d \n",newValue);
 
 }
 

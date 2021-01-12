@@ -9,7 +9,7 @@ int main(){
 
     value &= index;
 
-    printf("%d", value);
+    printf("%d \n", value);
 
 
 return 0;

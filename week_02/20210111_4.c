@@ -6,7 +6,7 @@ int main(){
     int value= 73;
     int index = 1;
     int newValue = vdigniBitNa(value, index);
-    printf("%d", newValue);
+    printf("%d \n", newValue);
 
     return 0;
 }

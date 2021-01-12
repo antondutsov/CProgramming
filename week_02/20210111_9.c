@@ -7,7 +7,7 @@ int shiftBit(int value){
 
     value = value & index;
 
-    printf("%d", value);
+    printf("%d \n", value);
 }
 
 int main(){

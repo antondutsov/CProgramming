@@ -6,7 +6,7 @@ int main(){
 
     int value = 5;
     int index = 3;
-    printf("%d\n", iz4istiBitna(value, index));
+    printf("%d \n", iz4istiBitna(value, index));
 
     return 0;
 }

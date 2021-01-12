@@ -4,7 +4,7 @@ int value(int a, int b);
 
 int main(){
     int sum = value(43, 37);
-    printf("%d", sum);
+    printf("%d \n", sum);
 }
 
 int value(int a,int b){

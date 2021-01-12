@@ -7,7 +7,7 @@ int main() {
     int value = 17;
     int index = 9;
 
-    printf("%d\n", getBit(value,index));
+    printf("%d \n", getBit(value,index));
 
     return 0;
 }

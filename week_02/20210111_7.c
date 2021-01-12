@@ -5,7 +5,7 @@ int main(){
     int value = 13257;
     int newValue = value & mask;
 
-    printf("%d",newValue);
+    printf("%d \n",newValue);
 
     return 0;
 
