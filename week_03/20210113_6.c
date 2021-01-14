@@ -9,7 +9,7 @@ int main(){
 
     char valueOne = -127;
     unsigned char valueTwo = 255;
-    unsigned int valueThree = 6237498; //changed the type of variable from 'int' to 'unsigned int'
+    unsigned int valueThree = 6237498; //changed the type of variable from 'int' to 'unsigned int'.
     long int valueFour = -9000000000000775845;
 
     printf("The 'signed char' value is: %d \n", valueOne);
