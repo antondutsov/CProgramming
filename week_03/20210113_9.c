@@ -12,7 +12,7 @@
 
 int main(){
 
-    double valueOne = 4.9876543;
+    float valueOne = 4.9876543; //chaged the variable type from double to float
     double valueTwo = 7.123456789012345678890;
     long double valueThree = 18398458438583853.28;
     long double valueFour = 18398458438583853.39875937284928422;
