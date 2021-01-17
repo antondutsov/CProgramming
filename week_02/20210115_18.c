@@ -39,26 +39,25 @@ int main(){
     printf("Ако желаете \"Каравана\" натиснете '1'\n\nАко желаете \"Кемпер\" натиснете '2' \n", &rez);
 
     scanf("%i", &rez);
-
-
-    if (rez == 1){
-        printf("Вие избрахте \"Каравана\". \n");
+    
+    switch(rez){
+        default: 
+            printf("Направете валиден избор! \n");
+        case 1:
+            printf("Вие избрахте \"Каравана\". \n");
         printf("За колко дни желаете да наемете превозното средство? \n");
         scanf("%i", &rentDays);
         total = caravanDayRent * rentDays;
         printf("Вашата крайна сума за плащане е: %i \n", total);
-
-    }
-    else if (rez == 2){
-        printf("Вие избрахте \"Кемпер\". \n");
+            break;
+        case 2:
+            printf("Вие избрахте \"Кемпер\". \n");
         printf("За колко дни желаете да наемете превозното средство? \n");
         scanf("%i", &rentDays);
         total = kemperDayRent * rentDays;
         printf("Вашата крайна сума за плащане е: %i \n", total);
-    }
-    else{
-        printf("Направете валиден избор! \n");
-    }
+            break;
+        }
 
     printf("\nЖелаете ли да се запознаете с други наши продукти? \n");
 
