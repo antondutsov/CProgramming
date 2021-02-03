@@ -12,7 +12,7 @@
 double atof();
 
 int main(void){
-    char str[] = "345.6789";
+    char str[] = "   345.6789";
 
     printf("\nThe String: %lf", atof(str));
 
@@ -20,24 +20,28 @@ int main(void){
 
 }
 
-double atof(char str[]){
-
-
+void str2(char str){
+    char str;
     char str2[16];
 
-
-
-
-    double fValue, power;
     int i = 0;
     int j = 0;
-    for(i; i<=strlen(str); j++;){
-        if(str[i] != ' ' && str[i] != '-'){
-            str[j]++;
+    for(i; i<=strlen(str); i++; j++){
+        if(str[i] != ' '){
+            j++;
             str2[i] = str[j];
-            i++;
+
         }
     }
+
+}
+
+
+double atof(char str[]){
+    int i = 0;
+
+    double fValue, power;
+
     for(fValue == 0.0; isdigit(str[i]); i++){
         fValue = 10.0 * fValue + (str[i] - '0');
     }
