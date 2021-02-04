@@ -12,30 +12,22 @@ void copy(char *to, char *from), която копира една
 */
 
 #include <stdio.h>
+#include <string.h>
 
-
-void copy(char *to, char *from){
-    int index = 0;
-    int lenght = 0;
-
-    while(from[lenght] != '\0'){
-        lenght++;
-    }
-
-    lenght--;
-
-    for(lenght; lenght >= 0; lenght--){
-        to[index] = from[lenght];
-        printf("%c", to[index]);
-        index++;
-    }
-
-}
-
-int main(){
-    char from[] = "abcdef";
+void copy(char *from, char *to);
+int main()
+{
+    char from[16];
     char to[16];
-     copy(to, from);
-
-return 0;
+    strcpy(from, "basic string");
+    strcpy(to, from);
+    printf("Copied string: %s", to);
+    return 0;
+}
+void copy(char *from, char *to)
+{
+    for (int i = 0; from[i] != '\0'; i++)
+    {
+        to[i] = from[i];
+    }
 }
