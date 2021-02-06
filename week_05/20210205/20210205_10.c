@@ -1,8 +1,4 @@
-/*
-Задача 9
-Напишете функцията strncpy(s, t, n), която копира най -
-много n символа от t в s
-*/
+
 
 #include <stdio.h>
 #include <string.h>
