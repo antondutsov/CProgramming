@@ -1,25 +1,38 @@
-
+/*
+Задача 5.
+Напишете функцията void our_strcat(char *s, char *t), която
+добавя (конкатенира) стринга t в края на стринга s. С един фор цикъл трябва
+да се стигне до края на низа s и след това на всяка следваща трябва да се
+копират елементите на низа t. Функцията strcat() предполага, че има
+достатъчно в s за да се копират всички стойности на низа t, защото иначе
+оператор за присвояване може да работи извън размера на масива и да
+имаме грешка. Но не сме разгледали динамичното заделяне на памет с
+malloc.
+*/
 
 #include <stdio.h>
 
-int our_strcmp(char *s, char *t);
+void myStrcat(char *s, char *t);
 
-int main()
-{
-    char first[] = "abcdfe";
-    char second[] = "abcdeg";
+int main(void){
+    char str1[] = {'M','a','l','l','o','\0'};
+    char str2[] = {'A','l','l','o','c','\0'};
 
-    printf("\nnumber/s returned by the strcmp function is: %d \n", our_strcmp(first, second));
+    myStrcat(str1, str2);
 
 return 0;
 }
 
-int our_strcmp(char *s, char *t)
-{
-    int i = 0;
-    for(i = 0; s[i] == t[i]; i++)
-        if(s[i] == '\0')
-            return 0;
+void myStrcat(char *s, char *t){
+    int i=0, j=0;
 
-return s[i] - t[i];
+    for(;s[i];i++);
+
+    while((s[i++] = t[j++]) != '\0'){
+        ;
+    }
+    for(;*s;s++){
+
+        printf("%c", *s);
+    }
 }

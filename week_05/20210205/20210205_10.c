@@ -1,25 +1,34 @@
-
+/*
+Задача 10.
+Напишете функцията strncat(s, t, n), която добавя
+(конкатенира) n символа от стринга t в края на стринга s.
+*/
 
 #include <stdio.h>
-#include <string.h>
 
-void mystrncpy(char *s, char *t, int n){
-    int i = 0, j = 0;
-    while(s[i] != '\0'){
+char* myStrncat(char* s, char* t, int n);
 
-        for (j; j<n; j++, i++){
-            s[i] = t[j];
-        }
-        s[i] = '\0';
-    }
+int main(void){
+    char str1[] = {'M','a','l','l','o','\0'};
+    char str2[] = {'A','l','l','o','c','\0'};
 
-    printf("%s \n", s);
-}
-int main(){
-    char s[] = "mallo";
-    char t[] = "cate";
-
-    mystrncpy(s, t, 3);
+    printf("%s", myStrncat(str1, str2, 3));
 
 return 0;
+}
+
+char* myStrncat(char *s,char *t, int n){
+    char * p = s;
+    while(*s){
+            s++;
+    }
+    while((*s=*t)!='\0' && n--)
+        {
+           s++;
+           t++;
+        }
+
+    *s = '\0';
+
+return p;
 }
