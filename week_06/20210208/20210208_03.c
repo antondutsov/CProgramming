@@ -4,9 +4,9 @@
 */
 
 #include <stdio.h>
-#define MAX_SIZE_ROWS (2)
-#define MAX_SIZE_COLS (2)
-#define MAX_SIZE_DEPT (2)
+#define MAX_SIZE_ROWS (5)
+#define MAX_SIZE_COLS (5)
+#define MAX_SIZE_DEPT (5)
 
 int main(){
     int alpha[MAX_SIZE_ROWS][MAX_SIZE_COLS][MAX_SIZE_DEPT];
